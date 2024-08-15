@@ -13,6 +13,12 @@ module.exports = {
       fontSize: {
         text32: "32px",
       },
+      screens: {
+        customMin: "250px",
+      },
+      maxWidth:{
+        1600: "1600px",
+      },
     },
   },
   plugins: [],
