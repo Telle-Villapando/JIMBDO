@@ -10,11 +10,8 @@ module.exports = {
       lineHeight: {
         125: "1.25", // 125% is equivalent to 1.25
       },
-      width: {
-        1520: "1520px",
-      },
-      margin: {
-        "28rem": "28rem",
+      fontSize: {
+        text32: "32px",
       },
     },
   },
