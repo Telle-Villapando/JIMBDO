@@ -1192,17 +1192,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
-@media (min-width: 576px) {
-  .min-\[576px\]\:gap-10 {
-    gap: 2.5rem;
-  }
-
-  .min-\[576px\]\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-}
-
 @media (min-width: 768px) {
   .md\:col-span-4 {
     grid-column: span 4 / span 4;
@@ -1226,24 +1215,13 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1;
   }
 
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 
-  .min-\[768px\]\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .min-\[992px\]\:grid-cols-12 {
-    grid-template-columns: repeat(12, minmax(0, 1fr));
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
