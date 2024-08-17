@@ -18,8 +18,13 @@ module.exports = {
       },
       maxWidth: {
         1600: "1600px",
+        380: "380px"
+      },
+      minWidth:{
+        250: "250px",
       },
     },
+
   },
   plugins: [],
 };
