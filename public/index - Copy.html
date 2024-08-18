@@ -135,6 +135,7 @@
           </div>
         </div>
       </div>
+   
 
       <!-- section section -->
 
@@ -228,19 +229,25 @@
        <div class="py-10">
 
         <!-- GRID CONTAINER -->
-         <div class="grid items-center justify-center grid-cols-6 gap-5 px-5 pt-10 pb-5 md:px-10 md:gap-10 lg:grid-cols-12 lg:gap-10 md:pt-20 md:pb-10">
-
+         <div class="grid items-center justify-center grid-cols-6 gap-5 px-5 md:px-10 md:gap-10 lg:grid-cols-12 lg:gap-10 ">
+          <style>
+            /* Custom CSS for list marker */
+            ol.blue-markers li::marker {
+              color: blue; /* Customize the color as needed */
+            }
+          </style>
           <!-- TEXT CONTAINER -->
           <div class="justify-center max-w-md col-span-6 col-start-1 row-start-1 lg:row-start-1 md:col-start-2 lg:col-span-5 lg:col-start-2">
             <h1 class="col-span-6 col-start-1 mb-10 text-3xl font-normal leading-tight text-center flex-nowrap md:text-5xl">How to make an online portfolio</h1>
             <p class="mb-10 text-base leading-tight text-center">If you're a photographer, artist, designer, model, or creative, putting your work online is the best way to reach a larger audience. And you can do it in 4 easy steps.</p>
           
           <div class="mb-10 border-t-2 border-b-2 border-gray-300 ">
-            <ol class="my-10 text-left list-decimal">
+            <ol class="my-10 text-left list-decimal blue-markers">
               <li class="mb-5 ml-7 ">
                 <span class="text-sm md:text-base">
                   Sign up or log in with social media. You’ll also be able to choose a domain (website address) for your portfolio site.
                 </span>
+                
               </li>
               <li class="mb-5 ml-7 ">
                 <span class="text-sm md:text-base">
@@ -260,98 +267,108 @@
             </ol>
           </div>
         <!-- ---  DIV OF BUTTON --- -->
-        <div>
-          <div class="flex flex-col self-center justify-center">
-            <button class=" items-center justify-center min-w-[250px] overflow-hidden whitespace-nowrap text-ellipsis text-center p-3 font-medium rounded border-box transition-colors duration-200 ease-out bg-blue-700">
-              <span class="text-sm font-medium text-white"> Start Now </span>
-            </button>
-            <p class="text-white">Start anytime to one of our premium plans</p>
-          </div>
+        
+        <div class="flex flex-col self-center justify-center w-full min-w-250 max-w-380">
+          <button class="items-center justify-center p-3 overflow-hidden font-medium text-center transition-colors duration-200 ease-out bg-blue-700 rounded whitespace-nowrap text-ellipsis border-box min-w-[250px] max-w-[380px]">
+            <span class="text-sm font-medium text-white md:text-base"> Start Now </span>
+          </button>
+          
         </div>
+      
         </div>
+        <!-- END OF TEXT CONTAINER -->
+        <!-- HIDDEN IMAGE CONTAINER -->
         
         <div class="flex col-span-5 lg:col-start-8 lg:row-start-1">
           <div class="hidden w-full lg:flex">
             <img src="steplist-portfolio.png" class="object-contain" alt="AHHH">
           </div>
         </div>
-        
 
-        </div>
-
-          
-          
+    </div>        
          </div>
-       </div>
+        </div>
+         
+       
 
        <!-- SECTION CONTAINER -->
-        <div>
+        <div class="py-16 ">
           <!-- GRID CONTAINER -->
-          <div class="grid justify-center grid-cols-6 gap-5 px-5 py-10 m-auto border-box">
+          <div class="grid justify-center grid-cols-6 gap-5 px-5 md:px-10 md:gap-10 lg:grid-cols-12 lg:gap-10">
 
-            <div class="col-span-6 row-start-1">
-              <h1>What kind of portfolio website will you create?</h1>
+            <div class="justify-center col-span-6 col-start-1 m-auto lg:col-span-12 lg:row-start-1 title-max-w">
+              <h1 class="col-span-6 col-start-1 text-3xl font-normal leading-tight text-left flex-nowrap md:text-5xl lg:text-center">What kind of portfolio website will you create?</h1>
             </div>
             <!-- IMAGE-TEXT CONTAINER -->
-             <div class="flex col-span-6 row-start-2">
+             <div class="flex col-span-6 row-start-2 image-text lg:col-span-6 lg:col-start-1">
               <div class="flex-col">
                 <div>
                   <img src="branch-1.png" alt="">
                 </div>
-                <h3>Graphic designer portfolio</h3>
-                <p>Your graphic design online portfolio shows off your skills and work examples in one place, from different design programs to different mediums.</p>
+                <h3 class="mb-4 text-xl font-medium leading-5 lg:text-2xl">Graphic designer portfolio</h3>
+                <p class="text-lg leading-6">Your graphic design online portfolio shows off your skills and work examples in one place, from different design programs to different mediums.</p>
                 <!-- START ARROW ICON -->
                <div>
-                <span>Start Now</span>
-                <span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="index-module--arrowRight--ca287"><path d="M6.352 11.194l3.8-3.291H0V6.09h10.151l-3.805-3.29 1.417-1.245L14 7.003l-6.231 5.441-1.417-1.25z" fill="currentColor"></path></svg></span>
+                <a href="" class="flex items-center content-center justify-between my-5 text-lg text-left border-b-2 border-black md:max-w-[106px] w-full">
+                  <span>Start Now</span>
+                <span class="flex item-center "><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="index-module--arrowRight--ca287"><path d="M6.352 11.194l3.8-3.291H0V6.09h10.151l-3.805-3.29 1.417-1.245L14 7.003l-6.231 5.441-1.417-1.25z" fill="currentColor"></path></svg></span>
+                </a>
                </div>
               </div>
+
+              
              </div>
              <!-- IMAGE TEXT CONTAINER END -->
                    <!-- IMAGE-TEXT CONTAINER -->
-             <div class="flex col-span-6 row-start-3">
+             <div class="flex col-span-6 row-start-3 image-text lg:row-start-2 lg:col-span-6 lg:col-start-7">
               <div class="flex-col">
                 <div>
                   <img src="branch-2.png" alt="">
                 </div>
-                <h3>Graphic designer portfolio</h3>
-                <p>Your graphic design online portfolio shows off your skills and work examples in one place, from different design programs to different mediums.</p>
+                <h3 class="mb-4 text-xl font-medium leading-5 lg:text-2xl">Photographer portfolio</h3>
+                <p class="text-lg leading-6">Building a photography portfolio means focusing on the work, not the website. Jimdo’s modern designs keep your images front and center. You can accept bookings, too!</p>
                 <!-- START ARROW ICON -->
                <div>
-                <span>Start Now</span>
-                <span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="index-module--arrowRight--ca287"><path d="M6.352 11.194l3.8-3.291H0V6.09h10.151l-3.805-3.29 1.417-1.245L14 7.003l-6.231 5.441-1.417-1.25z" fill="currentColor"></path></svg></span>
+                <a href="" class="flex items-center content-center justify-between my-5 text-lg text-left border-b-2 border-black md:max-w-[106px] w-full">
+                  <span>Start Now</span>
+                <span class="flex item-center "><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="index-module--arrowRight--ca287"><path d="M6.352 11.194l3.8-3.291H0V6.09h10.151l-3.805-3.29 1.417-1.245L14 7.003l-6.231 5.441-1.417-1.25z" fill="currentColor"></path></svg></span>
+                </a>
                </div>
               </div>
              </div>
              <!-- IMAGE TEXT CONTAINER END -->
                    <!-- IMAGE-TEXT CONTAINER -->
-             <div class="flex col-span-6 row-start-4">
+             <div class="flex col-span-6 row-start-4 image-text lg:row-start-3 lg:col-span-6 lg:col-start-1">
               <div class="flex-col">
                 <div>
                   <img src="branch-3.png" alt="">
                 </div>
-                <h3>Graphic designer portfolio</h3>
-                <p>Your graphic design online portfolio shows off your skills and work examples in one place, from different design programs to different mediums.</p>
+                <h3 class="mb-4 text-xl font-medium leading-5 lg:text-2xl">Artist portfolio</h3>
+                <p class="text-lg leading-6">Want to put your art online and sell it, too? Upload high-resolution images, post new work, and build your client base with a portfolio and online store all in one.</p>
                 <!-- START ARROW ICON -->
                <div>
-                <span>Start Now</span>
-                <span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="index-module--arrowRight--ca287"><path d="M6.352 11.194l3.8-3.291H0V6.09h10.151l-3.805-3.29 1.417-1.245L14 7.003l-6.231 5.441-1.417-1.25z" fill="currentColor"></path></svg></span>
+                <a href="" class="flex items-center content-center justify-between my-5 text-lg text-left border-b-2 border-black md:max-w-[106px] w-full">
+                  <span>Start Now</span>
+                <span class="flex item-center "><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="index-module--arrowRight--ca287"><path d="M6.352 11.194l3.8-3.291H0V6.09h10.151l-3.805-3.29 1.417-1.245L14 7.003l-6.231 5.441-1.417-1.25z" fill="currentColor"></path></svg></span>
+                </a>
                </div>
               </div>
              </div>
              <!-- IMAGE TEXT CONTAINER END -->
                    <!-- IMAGE-TEXT CONTAINER -->
-             <div class="flex col-span-6 row-start-5">
+             <div class="flex col-span-6 row-start-5 image-text lg:row-start-3 lg:col-span-6 lg:col-start-7">
               <div class="flex-col">
                 <div>
                   <img src="branch-4.png" alt="">
                 </div>
-                <h3>Graphic designer portfolio</h3>
-                <p>Your graphic design online portfolio shows off your skills and work examples in one place, from different design programs to different mediums.</p>
+                <h3 class="mb-4 text-xl font-medium leading-5 lg:text-2xl">Model portfolio</h3>
+                <p class="text-lg leading-6">You’re versatile and stylish, and your portfolio can be too. A website is a platform that you control, and it’s easy to use images right from your social media accounts.</p>
                 <!-- START ARROW ICON -->
                <div>
-                <span>Start Now</span>
-                <span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="index-module--arrowRight--ca287"><path d="M6.352 11.194l3.8-3.291H0V6.09h10.151l-3.805-3.29 1.417-1.245L14 7.003l-6.231 5.441-1.417-1.25z" fill="currentColor"></path></svg></span>
+                <a href="" class="flex items-center content-center justify-between my-5 text-lg text-left border-b-2 border-black md:max-w-[106px] w-full">
+                  <span>Start Now</span>
+                <span class="flex item-center "><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="index-module--arrowRight--ca287"><path d="M6.352 11.194l3.8-3.291H0V6.09h10.151l-3.805-3.29 1.417-1.245L14 7.003l-6.231 5.441-1.417-1.25z" fill="currentColor"></path></svg></span>
+                </a>
                </div>
               </div>
              </div>
@@ -362,100 +379,207 @@
         <!-- SECTION CONTAINER -->
          <!-- GRID CONTAINER -->
         <div
-        class="box-border grid justify-center grid-cols-6 gap-5 px-5 pt-10 pb-5 margin-auto max-w-1600"
+        class="box-border grid content-center justify-center grid-cols-6 gap-5 px-5 pt-10 pb-5 md:gap-10 margin-auto lg:grid-cols-12 "
       >
-        <div class="flex justify-center col-span-6">
-          <h2
-            class="col-span-6 row-start-1 text-5xl leading-tight text-center flex-nowrap"
+        <div class="justify-center col-span-6 col-start-1 m-auto md:px-10 md:pb-10 md:pt-20 lg:col-span-12">
+          <h1
+            class="col-span-6 col-start-1 m-auto text-3xl font-normal leading-tight text-center flex-nowrap md:text-5xl "
           >
             Get portfolio design inspirations with these examples
-          </h2>
+          </h1>
         </div>
+        
         
       </div>
       <!-- SECTION CONTAINER -->
        
-      <div class="box-border grid justify-center grid-cols-6 gap-5 px-5 margin-auto max-w-1600">
+      <div class="box-border grid justify-center grid-cols-6 gap-5 px-5 margin-auto md:px-10 ">
         <P
-          class="col-span-6 row-start-1 pb-5 text-center flex-nowrap "
+          class="col-span-6 row-start-1 pb-5 text-base text-center flex-nowrap md:text-xl"
         >
         Artists ♡ Jimdo! Spark your creativity with these website portfolio examples built with Jimdo.
       </P>
       </div>
       <!-- ---- AHHH CAROUSEL NAAA ---- -->
+       <!-- SECTION CONTAINER -->
        <div class="py-10 ">
-        <img src="website-1.png" alt="">
+        <!-- CAROUSEL WITH BILOG BILOG SA BABA CONTAINER -->
+         <div>
+          <!-- CAROUSEL WRAPPER -->
+           <div class="flex flex-col item-center">
+            <div id="default-carousel" class="relative" data-carousel="static">
+     
+              <div class="relative h-auto overflow-hidden rounded-lg w-72 ">
+                 
+                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <span class="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl ">Primer Slide</span>
+                      <img src="website-1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                  </div>
+                 
+                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <img src="website-11.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                  </div>
+                 
+                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <img src="website-3.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                  </div>
+              </div>
+              
+              
+              <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+              </div>
+             
+              <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                  <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                      <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                      <span class="hidden">Anterior</span>
+                  </span>
+              </button>
+              <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                  <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                      <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                      <span class="hidden">Siguiente</span>
+                  </span>
+              </button>
+          </div>
+      
         
+        
+          <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+           </div>
+         </div>
+      
        </div>
+
        <!-- SECTION CONTAINER WAT DA FAQ -->
         <div class="py-10">
           <!-- GRID CONTAINER -->
-           <div class="box-border grid justify-center grid-cols-6 gap-5 px-5 margin-auto max-w-1600">
+           <div class="grid grid-cols-6 gap-5 px-5 md:px-10 md:gap-10 lg:grid-cols-12 lg:gap-10 ">
 
             <!-- TITLE -->
-            <div class="justify-center col-span-6 row-start-1">
-              <h2>
-                <span>Online portfolio FAQ</span>
-              </h2>
+            <div class="justify-center col-span-6 col-start-1 lg:col-start-1 lg:col-span-12">
+              <h1
+            class="col-span-6 col-start-1 text-3xl font-normal leading-tight text-center flex-nowrap md:text-5xl"
+          >
+            Online Portfolio FAQ
+        </h1>
             </div>
             <!-- END TITLE -->
              
             <div class="col-span-6 col-start-auto row-start-2">
               <ul>
                 <li>
-                  <button class="flex items-center justify-between w-full mb-4 ">
-                    <h3 class="py-3 text-base leading-relaxed text-left">What are the benefits of having an online portfolio?</h3>
-                    <span>
-                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <button class="flex items-center justify-between w-full mb-4 " id="dropDown1" onclick="dropDownToggle('dropDown1Description', 'dropDown1Icon')">
+                    <h3 class="py-3 text-base font-medium leading-relaxed text-left lg:text-2xl">What are the benefits of having an online portfolio?</h3>
+                    <span  id="dropDown1Icon" class="transition-transform duration-300 transform">
+                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
                         <path fill="currentColor" d="M11 9V3c0-.555-.448-1-1-1-.556 0-1 .448-1 1v6H3c-.555 0-1 .448-1 1 0 .556.448 1 1 1h6v6c0 .555.448 1 1 1 .556 0 1-.448 1-1v-6h6c.555 0 1-.448 1-1 0-.556-.448-1-1-1h-6z"></path>
                         </svg>
                     </span>
                   </button>
 <!-- ---- PUT DROP DOWN DIV WITH INFOR HERE ---- -->
+                  <div class="hidden overflow-hidden " id="dropDown1Description">
+                    <div>
+                      <p class="text-sm lg:text-base">
+                        Creating an online portfolio is one of the best ways to show off your best work, all in one place. Even if you’re already using different social media accounts, putting your portfolio online gives you an online hub for potential clients, customers, agencies, and recruiters to see what you can do. It’s all on a platform you control, no matter how social media trends change. Plus, you can customize your design exactly how you want it.
+                      </p>
+                    </div>
+                  </div>
                 </li>
+            
+
+
+
                 <li>
-                  <button class="flex items-center justify-between w-full mb-4 ">
-                    <h3 class="py-3 text-base leading-relaxed text-left">How do i make a good portfolio website?</h3>
-                    <span>
-                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <button class="flex items-center justify-between w-full mb-4 " id="dropDown2" onclick="dropDownToggle('dropDown2Description', 'dropDown2Icon')">
+                    <h3 class="py-3 text-base font-medium leading-relaxed text-left lg:text-2xl">How do I make a good portfolio website?</h3>
+                    <span  id="dropDown2Icon" class="transition-transform duration-300 transform">
+                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
                         <path fill="currentColor" d="M11 9V3c0-.555-.448-1-1-1-.556 0-1 .448-1 1v6H3c-.555 0-1 .448-1 1 0 .556.448 1 1 1h6v6c0 .555.448 1 1 1 .556 0 1-.448 1-1v-6h6c.555 0 1-.448 1-1 0-.556-.448-1-1-1h-6z"></path>
                         </svg>
                     </span>
                   </button>
 <!-- ---- PUT DROP DOWN DIV WITH INFOR HERE ---- -->
+                  <div class="hidden overflow-hidden " id="dropDown2Description">
+                    <div>
+                      <p class="text-sm lg:text-base">
+                        Fortunately with Jimdo, most of the portfolio creation is already done for you! The best way to create a good online portfolio is to start with a custom domain. That shows the world that you take your project seriously and professionally. Once you put your portfolio online, make sure you use high-quality images, and choose a high-impact image for the header of your homepage to grab people’s attention. In addition to design, be sure to take a few minutes to optimize your site for search engines (Jimdo will walk you through how to do that). That way, your portfolio will start showing up in search engines for the right audience, and your traffic will grow.
+                      </p>
+                    </div>
+                  </div>
                 </li>
-                <li>
-                  <button class="flex items-center justify-between w-full mb-4 ">
-                    <h3 class="py-3 text-base leading-relaxed text-left">What should I put in my online portfolio?</h3>
-                    <span>
-                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <path fill="currentColor" d="M11 9V3c0-.555-.448-1-1-1-.556 0-1 .448-1 1v6H3c-.555 0-1 .448-1 1 0 .556.448 1 1 1h6v6c0 .555.448 1 1 1 .556 0 1-.448 1-1v-6h6c.555 0 1-.448 1-1 0-.556-.448-1-1-1h-6z"></path>
-                        </svg>
-                    </span>
-                  </button>
-                </li>
-                <li>
-                  <button class="flex items-center justify-between w-full mb-4 ">
-                    <h3 class="py-3 text-base leading-relaxed text-left">Why is an online portfolio important for a designer?</h3>
-                    <span>
-                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <path fill="currentColor" d="M11 9V3c0-.555-.448-1-1-1-.556 0-1 .448-1 1v6H3c-.555 0-1 .448-1 1 0 .556.448 1 1 1h6v6c0 .555.448 1 1 1 .556 0 1-.448 1-1v-6h6c.555 0 1-.448 1-1 0-.556-.448-1-1-1h-6z"></path>
-                        </svg>
-                    </span>
-                  </button>
-<!-- ---- PUT DROP DOWN DIV WITH INFOR HERE ---- -->
-                </li>
-                <li>
-                  <button class="flex items-center justify-between w-full mb-4 ">
-                    <h3 class="py-3 text-base leading-relaxed text-left">How do I choose the right design for my portfolio website?</h3>
-                    <span>
-                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            
+
+               <li>
+                  <button class="flex items-center justify-between w-full mb-4 " id="dropDown3" onclick="dropDownToggle('dropDown3Description', 'dropDown3Icon')">
+                    <h3 class="py-3 text-base font-medium leading-relaxed text-left lg:text-2xl">What should I put in my online portfolio?</h3>
+                    <span  id="dropDown3Icon" class="transition-transform duration-300 transform">
+                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
                         <path fill="currentColor" d="M11 9V3c0-.555-.448-1-1-1-.556 0-1 .448-1 1v6H3c-.555 0-1 .448-1 1 0 .556.448 1 1 1h6v6c0 .555.448 1 1 1 .556 0 1-.448 1-1v-6h6c.555 0 1-.448 1-1 0-.556-.448-1-1-1h-6z"></path>
                         </svg>
                     </span>
                   </button>
 <!-- ---- PUT DROP DOWN DIV WITH INFOR HERE ---- -->
+                  <div class="hidden overflow-hidden " id="dropDown3Description">
+                    <div>
+                      <p class="text-sm lg:text-base">
+                        A good portfolio website doesn’t have to be complicated. It’s a good idea to include a short bio and headshot on your About page, as well as any relevant skills or experience. Then, you can have some fun putting together the visuals on your site, either in a slide show or just by placing the images on your web pages. When you do this, try to choose just your best work. Don’t post everything you’ve ever done—be picky and keep in mind that many online visitors have short attention spans and don’t want to browse through years of your work. You can also easily add a contact form so visitors know how to get in touch with you.
+                      </p>
+                    </div>
+                  </div>
                 </li>
+            
+                <li>
+                  <button class="flex items-center justify-between w-full mb-4 " id="dropDown4" onclick="dropDownToggle('dropDown4Description', 'dropDown4Icon')">
+                    <h3 class="py-3 text-base font-medium leading-relaxed text-left lg:text-2xl">Why is an online portfolio important for a designer?</h3>
+                    <span  id="dropDown4Icon" class="transition-transform duration-300 transform">
+                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+                        <path fill="currentColor" d="M11 9V3c0-.555-.448-1-1-1-.556 0-1 .448-1 1v6H3c-.555 0-1 .448-1 1 0 .556.448 1 1 1h6v6c0 .555.448 1 1 1 .556 0 1-.448 1-1v-6h6c.555 0 1-.448 1-1 0-.556-.448-1-1-1h-6z"></path>
+                        </svg>
+                    </span>
+                  </button>
+<!-- ---- PUT DROP DOWN DIV WITH INFOR HERE ---- -->
+                  <div class="hidden overflow-hidden " id="dropDown4Description">
+                    <div>
+                      <p class="text-sm lg:text-base">
+                        When you’re a designer, visuals are a huge part of the story. An online portfolio helps you go beyond a paper resume and portfolio and really start attracting the attention of hiring managers and potential customers. By putting your designer portfolio online, you can show off all sorts of work beyond print—including video, multimedia, and more. It’s also a good way to let your personality shine through and share your photography, modeling shots, or graphic design work in a more personal way.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+            
+                <li>
+                  <button class="flex items-center justify-between w-full mb-4 " id="dropDown5" onclick="dropDownToggle('dropDown5Description', 'dropDown5Icon')">
+                    <h3 class="py-3 text-base font-medium leading-relaxed text-left lg:text-2xl">How do I choose the right design for my portfolio website?</h3>
+                    <span  id="dropDown5Icon" class="transition-transform duration-300 transform">
+                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+                        <path fill="currentColor" d="M11 9V3c0-.555-.448-1-1-1-.556 0-1 .448-1 1v6H3c-.555 0-1 .448-1 1 0 .556.448 1 1 1h6v6c0 .555.448 1 1 1 .556 0 1-.448 1-1v-6h6c.555 0 1-.448 1-1 0-.556-.448-1-1-1h-6z"></path>
+                        </svg>
+                    </span>
+                  </button>
+<!-- ---- PUT DROP DOWN DIV WITH INFOR HERE ---- -->
+                  <div class="hidden overflow-hidden " id="dropDown5Description">
+                    <div>
+                      <p class="text-sm lg:text-base">
+                        he best portfolio website designs and templates are clean, modern, and show off your work without distractions. When you sign up for Jimdo, you’ll be able to pick a style that fits you, and then the design of the website is taken care of! Once you create your online portfolio, you can tweak it and customize it as you like, but all the heavy lifting is done for you. So you can spend more time on your actual work, and less time laboring over your website.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+            
+                   <script>
+                  function dropDownToggle(dropdownId, iconId) {
+                    const dropdownContent = document.getElementById(dropdownId);
+                    dropdownContent.classList.toggle('hidden');
+                    const dropDownIcon = document.getElementById(iconId);
+                    // Toggle the rotation of the arrow icon
+                    
+                    dropDownIcon.classList.toggle('-rotate-225');
+                  }
+                </script>
                 
               </ul>
             </div>
@@ -463,27 +587,31 @@
            </div>
         </div>
         <!-- SECTION CONTAINER -->
-         <div>
+         <div class="py-16">
          <!-- GRID CONTAINER -->
           <div class="box-border grid justify-center grid-cols-6 gap-5 px-5 margin-auto max-w-1600">
             <!-- TITLE CONTAINER -->
              <div class="self-center col-span-6 row-start-1 mb-10 text-center">
-              <h1 class="text-4xl leading-tight customBlue pb-7">Show off your hard work</h1>
+              <h1 class="mb-5 text-4xl leading-tight">Show off your hard work</h1>
               <p>A portfolio creator for every profession</p>
              </div>
           <!-- TEXT CONTAINER -->
-           <div class="flex self-center col-span-6 row-start-auto text-center ">
+           <div class="flex self-center col-span-6 row-start-auto text-center">
             <div class="flex-col">
-              <h3 class="pb-5">
+              <h3 class="mb-5 text-lg font-medium leading-5 text-center md:text-xl">
                 Freelancer
               </h3>
-              <p class="pb-5">Every freelancer needs a website to attract new customers, find work, and show off your skills. Build your own portfolio, with no coding required!</p>
-              <div class="flex items-center justify-between text-lg border-b-2 border-black">
-                <span class="flex text-left">Freelance website how-to</span>
+              <p class="mb-5 text-sm text-center md:text-left md:text-base">Every freelancer needs a website to attract new customers, find work, and show off your skills. Build your own portfolio, with no coding required!</p>
+
+              <div class="flex items-center justify-between m-auto overflow-hidden text-lg border-b-2 border-black md:max-w-106 ">
+                <span class="flex text-lg text-left ">Freelance website how-to</span>
                 <span >
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="index-module--arrowRight--ca287"><path d="M6.352 11.194l3.8-3.291H0V6.09h10.151l-3.805-3.29 1.417-1.245L14 7.003l-6.231 5.441-1.417-1.25z" fill="currentColor"></path></svg>
                 </span>
               </div>
+
+              
+
             </div>
            </div>
              <!-- TEXT CONTAINER -->
@@ -516,6 +644,33 @@
             </div>
           </div>
         </div>
+        <style>
+          .-rotate-225{
+            transform: rotate(225deg);
+          }
+          
+          
+          @media (min-width: 768px) {
+            .image-text a {
+              max-width: 106px;
+            }
+            .title-max-w h1 p {
+              max-width: 688px;
+            }
+            
+          }
+          @media (min-width: 1024px){
+            .title-max-w h1{
+              max-width:616px;
+            }
+           
+          }
+          @media (min-width: 1440px){
+            .title-max-w h1{
+              max-width:893px;
+            }
+          }
+        </style>
     </main>
     <footer>
              <!-- SECTION CONTAINER -->
