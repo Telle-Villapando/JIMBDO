@@ -48,6 +48,46 @@
   </head>
   <body>
     <!-- NAV START -->
+     <nav class="sticky z-10 ">
+      
+
+      <!-- SIDE MENU BAR -->
+      
+      <header class="sticky z-10 w-full h-20 transition-all duration-200 ease-in-out">
+        <div class="flex flex-col justify-center h-full">
+         <div class="block">
+          <div class="flex flex-row items-center justify-between mx-5">
+          <!-- LOGO   -->
+          <div class="w-32">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 100 37"
+              class="HeaderDE-module--logoSVG--7b4fc"
+            >
+              <path
+                fill="#010334"
+                d="M82.37 9.905a8.58 8.58 0 00-8.579 8.58 8.58 8.58 0 008.58 8.58 8.58 8.58 0 008.58-8.58 8.58 8.58 0 00-8.58-8.58zm0 13.393a4.813 4.813 0 110-9.625 4.813 4.813 0 010 9.625zM35.137 10.23h3.608l5.469 10.267 5.444-10.267h3.633v16.513h-4.057V17.92l-4.618 8.823h-.803l-4.618-8.8v8.8h-4.057V10.23h-.001zm-12.252.057h-4.072v9.86a2.847 2.847 0 01-5.693 0H9.048a6.919 6.919 0 1013.837 0v-9.86zm40.54-.057h-6.1v16.513h6.1a8.256 8.256 0 100-16.513zm-.495 13.068h-1.546v-9.625h1.546a4.812 4.812 0 110 9.625zM31.04 10.287h-4.086v16.4h4.086v-16.4z"
+              ></path>
+              <path
+                fill="#010334"
+                d="M97.537 2.463V34.51H2.463V2.463h95.074zM100 0H0v36.973h100V0z"
+              ></path>
+            </svg>
+          </div>
+          <!-- BURGER MENU -->
+          <span class="cursor-pointer block h-[19px] relative transform rotate-0 transition-all ease-in-out duration-500 w-[25px] z-[1]">
+            <span class="bg-[#001453] block h-[3px] left-0 opacity-100 absolute transform rotate-0 transition-all ease-in-out duration-250 w-full"></span>
+            <span class="bg-[#001453] block h-[3px] left-0 opacity-100 absolute transform rotate-0 transition-all ease-in-out duration-250 w-full"></span>
+            <span class="bg-[#001453] block h-[3px] left-0 opacity-100 absolute transform rotate-0 transition-all ease-in-out duration-250 w-full"></span>
+            
+          </span>
+          </div>
+
+         </div>
+        </div>
+      </header>
+     </nav>
     
     <!-- --- NAV END --- -->
     <!-- --- MAIN CONTENT --- -->
@@ -469,7 +509,7 @@
             </div>
             <!-- END TITLE -->
              
-            <div class="col-span-6 col-start-auto row-start-2">
+            <div class="justify-center col-span-6 col-start-auto row-start-2 lg:col-start-2 lg:col-span-10">
               <ul>
                 <li>
                   <button class="flex items-center justify-between w-full mb-4 " id="dropDown1" onclick="dropDownToggle('dropDown1Description', 'dropDown1Icon')">
@@ -589,14 +629,14 @@
         <!-- SECTION CONTAINER -->
          <div class="py-16">
          <!-- GRID CONTAINER -->
-          <div class="box-border grid justify-center grid-cols-6 gap-5 px-5 margin-auto max-w-1600">
+          <div class="box-border grid justify-center grid-cols-6 gap-5 px-5 margin-auto max-w-1600 lg:grid-cols-12 lg:gap-10 lg:px-10">
             <!-- TITLE CONTAINER -->
-             <div class="self-center col-span-6 row-start-1 mb-10 text-center">
+             <div class="self-center col-span-6 row-start-1 mb-10 text-center lg:col-span-12 ">
               <h1 class="mb-5 text-4xl leading-tight">Show off your hard work</h1>
               <p>A portfolio creator for every profession</p>
              </div>
           <!-- TEXT CONTAINER -->
-           <div class="flex self-center col-span-6 row-start-auto text-center">
+           <div class="flex self-center col-span-6 row-start-auto text-center lg:row-start-2 lg:col-start-1 lg:col-span-4 ">
             <div class="flex-col">
               <h3 class="mb-5 text-lg font-medium leading-5 text-center md:text-xl">
                 Freelancer
@@ -615,12 +655,12 @@
             </div>
            </div>
              <!-- TEXT CONTAINER -->
-             <div class="flex self-center col-span-6 row-start-auto text-center">
+             <div class="flex self-center col-span-6 row-start-auto text-center lg:row-start-2 lg:col-start-5 lg:col-span-4">
               <div class="flex-col">
-                <h3 class="pb-5">
+                <h3 class="mb-5 text-lg font-medium leading-5 text-center md:text-xl">
                   Photography
                 </h3>
-                <p class="pb-5">Photographers love Jimdo for its beautiful and easy portfolio websites. See how you can get your photos online quickly and start taking bookings.</p>
+                <p class="mb-5 text-sm text-center md:text-left md:text-base">Photographers love Jimdo for its beautiful and easy portfolio websites. See how you can get your photos online quickly and start taking bookings.</p>
                 <div class="flex items-center justify-between text-lg border-b-2 border-black">
                   <span>Photography website how-to</span>
                   <span>
@@ -630,12 +670,12 @@
               </div>      
         </div>
          <!-- TEXT CONTAINER -->
-         <div class="flex self-center col-span-6 row-start-auto text-center">
+         <div class="flex self-center col-span-6 row-start-auto text-center lg:row-start-2 lg:col-start-9 lg:col-span-4">
           <div class="flex-col">
-            <h3 class="pb-5">
+            <h3 class="mb-5 text-lg font-medium leading-5 text-center md:text-xl">
               Design
             </h3>
-            <p class="pb-5">Create an art portfolio that matches your style. Our built-in tools will help you improve your search engine ranking and even sell your artwork online.</p>
+            <p class="mb-5 text-sm text-center md:text-left md:text-base">Create an art portfolio that matches your style. Our built-in tools will help you improve your search engine ranking and even sell your artwork online.</p>
             <div class="flex items-center justify-between text-lg border-b-2 border-black">
               <span>How to design a website</span>
               <span>
