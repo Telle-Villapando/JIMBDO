@@ -14,9 +14,9 @@ module.exports = {
         text32: "32px",
       },
       screens: {
-        DK: "2560px",
-        md: "768px",
         mb: "320px",
+        md: "768px",
+        DK: "2560px",
       },
       maxWidth: {
         1600: "1600px",
