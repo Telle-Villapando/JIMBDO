@@ -5,5 +5,24 @@
   font-weight: 400;
 }
 
+.headerHiddenDiv {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.2s;
+}
 
+.headerToggle.active .headerHiddenDiv,
+.headerToggle:hover .headerHiddenDiv {
+  opacity: 1;
+  max-height: 1000px;
+}
 
+.headerToggle.active svg,
+.headerToggle:hover svg {
+  transform: rotate(180deg);
+}
+
+.headerToggle svg {
+  transition: 0.2s ease;
+}

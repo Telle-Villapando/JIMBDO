@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="input.css" />
     <link rel="stylesheet" href="src/style.css" />
+ 
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
@@ -13,6 +14,7 @@
       href="https://fonts.cdnfonts.com/css/euclid-circular-a"
       rel="stylesheet"
     />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
 
     <!-- AHHHH -->
     <!-- AHHHH
@@ -44,50 +46,26 @@
         font-size: 20px; /* Set the font size */
         line-height: 140%; /* Set the line height as a percentage of the font size */
       }
+      nav {
+  position: fixed;
+  z-index: 1000;
+}
+
+header {
+  position: relative;
+  z-index: 1000;
+}
     </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
-    <!-- NAV START -->
-     <nav class="sticky z-10 ">
-      
+    <script src="burger.js"></script>
+  
 
-      <!-- SIDE MENU BAR -->
-      
-      <header class="sticky z-10 w-full h-20 transition-all duration-200 ease-in-out">
-        <div class="flex flex-col justify-center h-full">
-         <div class="block">
-          <div class="flex flex-row items-center justify-between mx-5">
-          <!-- LOGO   -->
-          <div class="w-32">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 100 37"
-              class="HeaderDE-module--logoSVG--7b4fc"
-            >
-              <path
-                fill="#010334"
-                d="M82.37 9.905a8.58 8.58 0 00-8.579 8.58 8.58 8.58 0 008.58 8.58 8.58 8.58 0 008.58-8.58 8.58 8.58 0 00-8.58-8.58zm0 13.393a4.813 4.813 0 110-9.625 4.813 4.813 0 010 9.625zM35.137 10.23h3.608l5.469 10.267 5.444-10.267h3.633v16.513h-4.057V17.92l-4.618 8.823h-.803l-4.618-8.8v8.8h-4.057V10.23h-.001zm-12.252.057h-4.072v9.86a2.847 2.847 0 01-5.693 0H9.048a6.919 6.919 0 1013.837 0v-9.86zm40.54-.057h-6.1v16.513h6.1a8.256 8.256 0 100-16.513zm-.495 13.068h-1.546v-9.625h1.546a4.812 4.812 0 110 9.625zM31.04 10.287h-4.086v16.4h4.086v-16.4z"
-              ></path>
-              <path
-                fill="#010334"
-                d="M97.537 2.463V34.51H2.463V2.463h95.074zM100 0H0v36.973h100V0z"
-              ></path>
-            </svg>
-          </div>
-          <!-- BURGER MENU -->
-          <span class="cursor-pointer block h-[19px] relative transform rotate-0 transition-all ease-in-out duration-500 w-[25px] z-[1]">
-            <span class="bg-[#001453] block h-[3px] left-0 opacity-100 absolute transform rotate-0 transition-all ease-in-out duration-250 w-full"></span>
-            <span class="bg-[#001453] block h-[3px] left-0 opacity-100 absolute transform rotate-0 transition-all ease-in-out duration-250 w-full"></span>
-            <span class="bg-[#001453] block h-[3px] left-0 opacity-100 absolute transform rotate-0 transition-all ease-in-out duration-250 w-full"></span>
-            
-          </span>
-          </div>
 
-         </div>
-        </div>
-      </header>
-     </nav>
+
+
     
     <!-- --- NAV END --- -->
     <!-- --- MAIN CONTENT --- -->
@@ -96,16 +74,17 @@
       <div class="pt-10 pb-16 lg:pt-16 lg:pb-32 md:pt-16 md:pb-32 ">
         <!-- -- grid container --- -->
         <div
-          class="grid grid-cols-6 gap-5 px-5 py-10 grid-row-2 md:px-10 md:gap-10 lg:grid-cols-12 lg:gap-10"
+          class="grid grid-cols-6 gap-5 px-5 py-10 md:px-10 md:gap-10 lg:grid-cols-12 "
         >
           <!-- --- DIV DESCRIPTION Container --- -->
-          <div class="col-span-6 row-start-1 md:col-span-4 md:col-start-2 lg:col-start-1 lg:col-span-5">
+          <div class="col-span-6 row-start-1 md:col-span-4 md:col-start-2 lg:col-start-1 lg:col-span-5 md:max-w-[445px]">
+            
             <h1 class="pb-5 text-3xl font-normal leading-tight md:text-5xl ">
               Create an Online Portfolio With Jimbdo
             </h1>
             <!-- --- LIST YUNG MAY CHECK -- -->
             <div class="flex">
-              <ul>
+              <ul >
                 <li class="flex items-center mb-3">
                   <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -163,7 +142,7 @@
               <button class="items-center justify-center p-3 overflow-hidden font-medium text-center transition-colors duration-200 ease-out bg-blue-700 rounded whitespace-nowrap text-ellipsis border-box min-w-[250px] max-w-[380px]">
                 <span class="text-sm font-medium text-white md:text-base"> Start Now </span>
               </button>
-              <p class="mt-3 text-sm text-center text-gray-500">Start for free and upgrade anytime to one of our premium plans</p>
+              <p class="mt-3 text-sm text-center text-gray-500  min-w-[250px] max-w-[380px]">Start for free and upgrade anytime to one of our premium plans</p>
             </div>
         
 
@@ -174,6 +153,7 @@
             <img src="hero-image.png" alt="A designer na may future" />
           </div>
         </div>
+
       </div>
    
 
@@ -183,7 +163,7 @@
       <div
         class="grid grid-cols-6 gap-5 px-5 pt-10 pb-5 md:px-10 md:gap-10 lg:grid-cols-12 lg:gap-10 md:pt-20 md:pb-10"
       >
-        <div class="justify-center col-span-6 col-start-1 lg:col-start-1 lg:col-span-12">
+        <div class="justify-center col-span-6 col-start-1 lg:col-start-1 lg:col-span-12 ">
           <h1
             class="col-span-6 col-start-1 text-3xl font-normal leading-tight text-center flex-nowrap md:text-5xl"
           >
@@ -269,7 +249,7 @@
        <div class="py-10">
 
         <!-- GRID CONTAINER -->
-         <div class="grid items-center justify-center grid-cols-6 gap-5 px-5 md:px-10 md:gap-10 lg:grid-cols-12 lg:gap-10 ">
+         <div class="grid items-center justify-center grid-cols-6 gap-5 px-5 md:px-10 md:gap-10 lg:grid-cols-12 ">
           <style>
             /* Custom CSS for list marker */
             ol.blue-markers li::marker {
@@ -277,7 +257,8 @@
             }
           </style>
           <!-- TEXT CONTAINER -->
-          <div class="justify-center max-w-md col-span-6 col-start-1 row-start-1 lg:row-start-1 md:col-start-2 lg:col-span-5 lg:col-start-2">
+          <div class="justify-center max-w-md col-span-6 col-start-1 row-start-1 lg:row-start-1 md:col-start-2 lg:col-span-5 ">
+
             <h1 class="col-span-6 col-start-1 mb-10 text-3xl font-normal leading-tight text-center flex-nowrap md:text-5xl">How to make an online portfolio</h1>
             <p class="mb-10 text-base leading-tight text-center">If you're a photographer, artist, designer, model, or creative, putting your work online is the best way to reach a larger audience. And you can do it in 4 easy steps.</p>
           
@@ -442,57 +423,72 @@
       </div>
       <!-- ---- AHHH CAROUSEL NAAA ---- -->
        <!-- SECTION CONTAINER -->
-       <div class="py-10 ">
-        <!-- CAROUSEL WITH BILOG BILOG SA BABA CONTAINER -->
-         <div>
-          <!-- CAROUSEL WRAPPER -->
-           <div class="flex flex-col item-center">
-            <div id="default-carousel" class="relative" data-carousel="static">
-     
-              <div class="relative h-auto overflow-hidden rounded-lg w-72 ">
-                 
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                      <span class="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl ">Primer Slide</span>
-                      <img src="website-1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                  </div>
-                 
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                      <img src="website-11.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                  </div>
-                 
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                      <img src="website-3.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                  </div>
-              </div>
-              
-              
-              <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-              </div>
-             
-              <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                  <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                      <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                      <span class="hidden">Anterior</span>
-                  </span>
-              </button>
-              <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                  <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                      <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                      <span class="hidden">Siguiente</span>
-                  </span>
-              </button>
-          </div>
-      
-        
-        
-          <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
-           </div>
-         </div>
-      
-       </div>
+<div class="">
+  <div id="indicators-carousel" class="relative w-full" data-carousel="static">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+            <img src="website-1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="website-11.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="website-3.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="website-4.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="website-5.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="website-6.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+    </div>
+   
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer start-0 group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 bg-white rounded-full ">
+            <svg class="w-4 h-4 text-black hover:text-blue-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer end-0 group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 bg-white rounded-full ">
+            <svg class="w-4 h-4 text-black hover:text-blue-600 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+     <!-- Slider indicators -->
+     <div class="absolute z-30 flex space-x-3 text-blue-600 -translate-x-1/2 rtl:space-x-reverse bottom-5 left-1/2">
+      <button type="button" class="w-3 h-3 rounded-full " aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="5"></button>
+  </div>
+</div>
+
+  
+
+
+
+</div>
+
+
+    
 
        <!-- SECTION CONTAINER WAT DA FAQ -->
         <div class="py-10">
@@ -508,6 +504,8 @@
         </h1>
             </div>
             <!-- END TITLE -->
+
+            
              
             <div class="justify-center col-span-6 col-start-auto row-start-2 lg:col-start-2 lg:col-span-10">
               <ul>
@@ -529,9 +527,6 @@
                     </div>
                   </div>
                 </li>
-            
-
-
 
                 <li>
                   <button class="flex items-center justify-between w-full mb-4 " id="dropDown2" onclick="dropDownToggle('dropDown2Description', 'dropDown2Icon')">
@@ -618,6 +613,7 @@
                     // Toggle the rotation of the arrow icon
                     
                     dropDownIcon.classList.toggle('-rotate-225');
+
                   }
                 </script>
                 
@@ -710,6 +706,13 @@
               max-width:893px;
             }
           }
+          @media (min-width: 992px) {
+  footer .hiddenDiv {
+    max-height: max-content;
+  }
+
+
+}
         </style>
     </main>
     <footer>
@@ -719,7 +722,7 @@
                  <div class="box-border grid justify-center grid-cols-6 gap-5 px-5 margin-auto max-w-1600">
                  
     <!-- Dropdown Container -->
-    <div class="w-full col-span-6 py-5">
+    <div class="w-full col-span-6 row-start-1 py-5" >
       <!-- PRODUCTS Dropdown -->
       <div>
         <button id="dropdown-products-toggle" class="relative flex items-center justify-between w-full p-2 bg-transparent" onclick="toggleDropdown('dropdown-products')">
@@ -834,61 +837,132 @@
                    </div> 
 
             <!-- LANGUAGE SELECT -->
-<div class="justify-center col-span-6 col-start-2 py-5">
+<div class="justify-center col-span-6 py-5">
 
 
-
-  <label class="relative flex items-center col-span-6 m-auto overflow-hidden appearance-none cursor-pointer w-fit ">
-
-
-    <!-- --FLAG ICONS-- -->
-    <div class="flex justify-center">
-
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" class="w-6 h-6" style="border-radius: 50%;">
-        <path d="M0 0v30h30V0z" fill="#012169"></path>
-        <path d="M0 0l30 30m0-30L0 30" stroke="#fff" stroke-width="6"></path>
-        <path d="M0 0l30 30m0-30L0 30" stroke="#C8102E" stroke-width="4"></path>
-        <path d="M15 0v30M0 15h30" stroke="#fff" stroke-width="10"></path>
-        <path d="M15 0v30M0 15h30" stroke="#C8102E" stroke-width="6"></path>
+<!--   
+NEW LANG SELECT -->
+ <!-- LANG Dropdown -->
+ <div class="col-span-3 col-start-2 ">
+  <button id="dropdown-language-toggle" class="relative flex items-center justify-center w-full p-2 text-center bg-transparent" onclick="toggleDropdown('dropdown-language')">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" class="w-6 h-6" style="border-radius: 50%;">
+      <path d="M0 0v30h30V0z" fill="#012169"></path>
+      <path d="M0 0l30 30m0-30L0 30" stroke="#fff" stroke-width="6"></path>
+      <path d="M0 0l30 30m0-30L0 30" stroke="#C8102E" stroke-width="4"></path>
+      <path d="M15 0v30M0 15h30" stroke="#fff" stroke-width="10"></path>
+      <path d="M15 0v30M0 15h30" stroke="#C8102E" stroke-width="6"></path>
+    </svg>
+    <svg viewBox="0 0 3900 3900" class="w-6 h-6" style="border-radius: 50%;">
+      <path fill="#b22234" d="M0 0h3900v3900H0z"></path>
+      <path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300"></path>
+      <path fill="#3c3b6e" d="M0 0h2964v2100H0z"></path>
+      <path d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z"></path>
+    </svg>
+    <h3 class="ml-4 text-base font-semibold">English</h3>
+    <span class="ml-2">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-transform duration-300 transform" id="dropdown-language-arrow">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.712 9.707l-5.004 5.004a.994.994 0 01-.706.292.995.995 0 01-.707-.292L4.293 9.707a.999.999 0 111.414-1.414l4.295 4.298 4.296-4.298a.999.999 0 111.414 1.414z" fill="currentColor"></path>
       </svg>
-      <svg viewBox="0 0 3900 3900" class="w-6 h-6" style="border-radius: 50%;">
-        <path fill="#b22234" d="M0 0h3900v3900H0z"></path>
-        <path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300"></path>
-        <path fill="#3c3b6e" d="M0 0h2964v2100H0z"></path>
-        <path d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z"></path>
-      </svg>
-      <select name="languageSwitch" id="languageSwitch" class="z-10 block col-span-6 py-2 pl-3 pr-5 ml-2 appearance-none bg-none">
-        <option value="en-US" selected>English</option>
-        <option value="de-DE">Deutsch</option>
-        <option value="es-ES">Español</option>
-        <option value="fr-FR">Français</option>
-        <option value="it-IT">Italiano</option>
-        <option value="ja-JP">日本語</option>
-        <option value="nl-NL">Nederlands</option>
-      </select>
-      <!-- Arrow Icon -->
-      <svg id="arrowIcon" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 ml-2 transition-transform transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-      </svg>
-    </div> 
-  </label>
+    </span>
+  </button>
+
+  <!-- LANGUAGE DROPDOWN -->
+  <div id="dropdown-language" class="hidden p-2 mt-2 bg-transparent ">
+    <ul class="flex flex-col justify-center space-y-2 text-center">
+     
+   
+      
+        <li>
+          <a href="" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+            <div class="inline-flex items-center">
+              <svg class="hidden w-6 h-6 rounded-full me-2 lg:block" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de" viewBox="0 0 512 512"><path fill="#ffce00" d="M0 341.3h512V512H0z"/><path d="M0 0h512v170.7H0z"/><path fill="#d00" d="M0 170.7h512v170.6H0z"/></svg>
+              
+              <h3 class="ml-4 text-base font-semibold">Deutsch</h3>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+            <div class="inline-flex items-center">
+              <svg class="hidden w-6 h-6 border-blue-800 rounded-full me-2 lg:block" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+                <g fill-rule="evenodd">
+                  <path fill="#c8102e" d="M0 0h640v160H0zm0 160h640v160H0zm0 320h640V320H0z"/>
+                  <path fill="#ffc720" d="M0 320h640v160H0z"/>
+                </g>
+              </svg>
+              <h3 class="ml-4 text-base font-semibold"> Español</h3>   
+             
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+            <div class="inline-flex items-center">
+              <svg class="hidden w-6 h-6 rounded-full me-2 lg:block" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+                <g fill-rule="evenodd">
+                  <path fill="#0055A4" d="M0 0h213v480H0z"/>
+                  <path fill="#FFFFFF" d="M213 0h213v480H213z"/>
+                  <path fill="#EF4135" d="M426 0h214v480H426z"/>
+                </g>
+              </svg>
+              <h3 class="ml-4 text-base font-semibold">Français</h3>    
+              
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+            <div class="inline-flex items-center">
+              <svg class="hidden w-6 h-6 rounded-full me-2 lg:block" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-it" viewBox="0 0 512 512"><g fill-rule="evenodd" stroke-width="1pt"><path fill="#fff" d="M0 0h512v512H0z"/><path fill="#009246" d="M0 0h170.7v512H0z"/><path fill="#ce2b37" d="M341.3 0H512v512H341.3z"/></g></svg>              
+              <h3 class="ml-4 text-base font-semibold">Italiano</h3>
+              
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+            <div class="inline-flex items-center">
+              <svg class="hidden w-6 h-6 rounded-full me-2 lg:block" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+                <g fill-rule="evenodd">
+                  <path fill="#FFFFFF" d="M0 0h640v480H0z"/>
+                  <circle fill="#BC002D" cx="320" cy="240" r="160"/>
+                </g>
+              </svg>
+              <h3 class="ml-4 text-base font-semibold">中文 (繁體)</h3>
+              
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+            <div class="inline-flex items-center">
+              <svg class="hidden w-6 h-6 rounded-full me-2 lg:block" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+                <g fill-rule="evenodd">
+                  <path fill="#21468B" d="M0 0h640v160H0z"/>
+                  <path fill="#fff" d="M0 160h640v160H0z"/>
+                  <path fill="#AE1C28" d="M0 320h640v160H0z"/>
+                </g>
+              </svg>
+              <h3 class="ml-4 text-base font-semibold">Nederlands</h3>
+              
+            </div>
+          </a>
+        </li>
+      </ul>
+  
+  </div>
 </div>
 
-<!-- JavaScript to toggle the rotation -->
-<script>
-  const selectElement = document.getElementById('languageSwitch');
-  const arrowIcon = document.getElementById('arrowIcon');
 
-  // Detect when the select element is focused (opened)
-  selectElement.addEventListener('focus', () => {
-    arrowIcon.classList.add('rotate-180');
-  });
+</div>
+<!-- LANGUAGE SELECT END  -->
 
-  // Detect when the select element is blurred (closed)
-  selectElement.addEventListener('blur', () => {
-    arrowIcon.classList.remove('rotate-180');
-  });
-</script>
+
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
 
 <style>
   .rotate-180 {
@@ -905,17 +979,17 @@
                         Legal notice
                       </span>
                     </li>
-                    <li lass="px-3 py-2">
+                    <li class="px-3 py-2">
                       <span>
                         Terms of Service
                       </span>
                     </li>
-                    <li lass="px-3 py-2"> 
+                    <li class="px-3 py-2"> 
                       <span>
                         Privacy Policy
                       </span>
                     </li>
-                    <li lass="px-3 py-2">
+                    <li class="px-3 py-2">
                       <span>
                         Cookie Settings
                       </span>

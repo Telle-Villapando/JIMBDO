@@ -14,18 +14,19 @@ module.exports = {
         text32: "32px",
       },
       screens: {
-        tablet: "768px",
+        DK: "2560px",
+        md: "768px",
+        mb: "320px",
       },
       maxWidth: {
         1600: "1600px",
         380: "380px",
         106: "106px",
       },
-      minWidth:{
+      minWidth: {
         250: "250px",
       },
     },
-
   },
   plugins: [],
 };
