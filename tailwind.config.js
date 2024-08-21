@@ -28,6 +28,10 @@ module.exports = {
       minWidth: {
         250: "250px",
       },
+      colors:{
+        darkBlue: "#001453",
+        brightBlue: "#004ced",
+      }
     },
   },
   plugins: [],

@@ -1,0 +1,22 @@
+.headerHiddenDiv {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.2s, max-height 0.2s;
+  }
+  
+  .headerToggle.active .headerHiddenDiv,
+  .headerToggle:hover .headerHiddenDiv {
+    opacity: 1;
+    max-height: 1000px; /* or none if flexible */
+  }
+  
+  .headerToggle.active svg,
+  .headerToggle:hover svg {
+    transform: rotate(180deg);
+  }
+  
+  .headerToggle svg {
+    transition: transform 0.2s ease;
+  }
+  

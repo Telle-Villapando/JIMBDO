@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="navv.css">
+  <style>
+    nav {
+      position: fixed;
+      z-index: 1000;
+    }
+    
+    header {
+      position: relative;
+      z-index: 1000;
+    }
+  </style>
+
+</head>
+<body>
+ 
+  
+  <nav class="fixed top-0 left-0 right-0 bg-white z-98">
+    <div
+      class="max-[991px]:flex max-[991px]:justify-between max-[991px]:items-center max-[991px]:p-5 max-[991px]:bg-white max-[991px]:h-[68px] min-[768px]:h-[90px] max-[991px]:shadow-custom-shadow max-[991px]:z-98"
+    >
+      <!-----hamburger-->
+      <div class="hamburger fixed right-[20px z-101]">
+        <div class="h-[3px] w-[25px] bg-darkBlue mb-1"></div>
+        <div class="h-[3px] w-[25px] bg-darkBlue mb-1"></div>
+        <div class="h-[3px] w-[25px] bg-darkBlue"></div>
+      </div>
+  
+      <header
+        class="h-[68px] min-[768px]:h-[90px] bg-white shadow-custom-shadow flex items-center navbar relative z-1000"
+      >
+        <div
+          class="max-[991px]:flex max-[991px]:justify-between max-w-[1600px] m-auto min-[768px]:h-[90px] min-[992px]:grid min-[992px]:grid-cols-12 min-[992px]:gap-10 min-[992px]:px-10 items-center w-full max-[991px]:mx-5 relative z-1000"
+        >
+          <!-----logo-->
+          <div class="col-span-2 logo">
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 100 37"
+                width="103"
+                height="38"
+              >
+                <path
+                  fill="#010334"
+                  d="M82.37 9.905a8.58 8.58 0 00-8.579 8.58 8.58 8.58 0 008.58 8.58 8.58 8.58 0 008.58-8.58 8.58 8.58 0 00-8.58-8.58zm0 13.393a4.813 4.813 0 110-9.625 4.813 4.813 0 010 9.625zM35.137 10.23h3.608l5.469 10.267 5.444-10.267h3.633v16.513h-4.057V17.92l-4.618 8.823h-.803l-4.618-8.8v8.8h-4.057V10.23h-.001zm-12.252.057h-4.072v9.86a2.847 2.847 0 01-5.693 0H9.048a6.919 6.919 0 1013.837 0v-9.86zm40.54-.057h-6.1v16.513h6.1a8.256 8.256 0 100-16.513zm-.495 13.068h-1.546v-9.625h1.546a4.812 4.812 0 110 9.625zM31.04 10.287h-4.086v16.4h4.086v-16.4z"
+                ></path>
+                <path
+                  fill="#010334"
+                  d="M97.537 2.463V34.51H2.463V2.463h95.074zM100 0H0v36.973h100V0z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+  
+          <!------blank div-->
+          <div class="blank-div"></div>
+  
+          <!--first nav group-->
+          <div
+            class="min-[992px]:flex min-[992px]:gap-12 min-[992px]:col-start-3 min-[992px]:col-end-9 navbar1"
+          >
+            <div
+              class="px-1.5 headerToggle borderDiv h-[68px] min-[768px]:h-[90px] hover:border-b-4 hover:border-brightBlue"
+            >
+              <button class="flex items-center h-[68px] min-[768px]:h-[90px]" >
+                <p class="pr-1 font-medium text-darkBlue toggleDiv">
+                  Website
+                </p>
+                <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.712 9.707l-5.004 5.004a.994.994 0 01-.706.292.995.995 0 01-.707-.292L4.293 9.707a.999.999 0 111.414-1.414l4.295 4.298 4.296-4.298a.999.999 0 111.414 1.414z"
+                  fill="#001453"
+                ></path>
+              </svg>
+              </button>
+  
+              <div class="" >
+                <div
+                  class="bg-white flex shadow-custom-shadow ml-[-40px] absolute headerHiddenDiv"
+                >
+                  <div class="px-10 pt-10 pb-16">
+                    <h3
+                      class="text-xs font-semibold opacity-[70%] text-nowrap mb-7"
+                    >
+                      OUR WEBSITE BUILDER
+                    </h3>
+                    <div>
+                      <ul>
+                        <li class="my-5">
+                          <a
+                            href=""
+                            class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >Create a website</a
+                          >
+                        </li>
+                        <li class="my-5">
+                          <a
+                            href=""
+                            class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >Pricing and plans</a
+                          >
+                        </li>
+                        <li class="my-5">
+                          <a
+                            href=""
+                            class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >Website examples</a
+                          >
+                        </li>
+                        <li class="my-5">
+                          <a
+                            href=""
+                            class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >Your own domain</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="px-10 pt-10 pb-16">
+                    <h3
+                      class="text-xs font-semibold opacity-[70%] text-nowrap mb-7"
+                    >
+                      USEFUL TOOLS FOR YOUR WEBSITE
+                    </h3>
+                    <div>
+                      <ul>
+                        <li class="my-5">
+                          <a href=""
+                            ><p
+                              class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >
+                              Warning-proof legal texts
+                            </p>
+                            <p
+                              class="text-sm font-medium text-darkBlue text-nowrap hover:text-brightBlue"
+                            >
+                              For privacy policy & Co
+                            </p></a
+                          >
+                        </li>
+                        <li class="my-5">
+                          <a href=""
+                            ><p
+                              class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >
+                              Industry entries
+                            </p>
+                            <p
+                              class="text-sm font-medium text-darkBlue text-nowrap hover:text-brightBlue"
+                            >
+                              For Google, Facebook & Co.
+                            </p></a
+                          >
+                        </li>
+                        <li class="my-5">
+                          <a href=""
+                            ><p
+                              class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >
+                              Online booking
+                            </p>
+                            <p
+                              class="text-sm font-medium text-darkBlue text-nowrap hover:text-brightBlue"
+                            >
+                              Directly via your website
+                            </p></a
+                          >
+                        </li>
+                        <li class="mt-5">
+                          <a href=""
+                            ><p
+                              class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >
+                              Social media integration
+                            </p>
+                            <p
+                              class="text-sm font-medium text-darkBlue text-nowrap hover:text-brightBlue"
+                            >
+                              Promote on Facebook & Instagram
+                            </p></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="px-10 pt-10 pb-16">
+                    <h3
+                      class="text-xs font-semibold opacity-[70%] text-nowrap mb-7"
+                    >
+                      FOR YOUR INDUSTRY
+                    </h3>
+                    <div>
+                      <ul>
+                        <li class="my-3">
+                          <a
+                            href=""
+                            class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >Online portfolio</a
+                          >
+                        </li>
+                        <li class="my-3">
+                          <a
+                            href=""
+                            class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >Restaurant websites</a
+                          >
+                        </li>
+                        <li class="my-3">
+                          <a
+                            href=""
+                            class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >Coaches</a
+                          >
+                        </li>
+                        <li class="my-3">
+                          <a
+                            href=""
+                            class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >Musician & Bands</a
+                          >
+                        </li>
+                        <li class="my-3">
+                          <a
+                            href=""
+                            class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >Real estate agents</a
+                          >
+                        </li>
+                        <li class="my-3">
+                          <a
+                            href=""
+                            class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >Doctors and Practices</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="px-1.5 headerToggle borderDiv h-[68px] min-[768px]:h-[90px] hover:border-b-4 hover:border-brightBlue"
+            >
+              <button class="flex items-center h-[68px] min-[768px]:h-[90px]">
+                <p class="pr-1 font-medium text-darkBlue">Online Store</p>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M15.712 9.707l-5.004 5.004a.994.994 0 01-.706.292.995.995 0 01-.707-.292L4.293 9.707a.999.999 0 111.414-1.414l4.295 4.298 4.296-4.298a.999.999 0 111.414 1.414z"
+                    fill="#001453"
+                  ></path>
+                </svg>
+              </button>
+              <div class="">
+                <div
+                  class="bg-white flex shadow-custom-shadow ml-[-40px] absolute headerHiddenDiv"
+                >
+                  <div class="px-10 pt-10 pb-16">
+                    <h3
+                      class="text-xs font-semibold opacity-[70%] text-nowrap mb-7"
+                    >
+                      OUR ONLINE STORE BUILDER
+                    </h3>
+                    <div>
+                      <ul>
+                        <li class="my-5">
+                          <a
+                            href=""
+                            class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >Create an online store</a
+                          >
+                        </li>
+                        <li class="my-5">
+                          <a
+                            href=""
+                            class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >Pricing and Plans</a
+                          >
+                        </li>
+                        <li class="my-5">
+                          <a
+                            href=""
+                            class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >Online store examples</a
+                          >
+                        </li>
+                        <li class="my-5">
+                          <a
+                            href=""
+                            class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >Your own domain</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="px-10 pt-10 pb-16">
+                    <h3
+                      class="text-xs font-semibold opacity-[70%] text-nowrap mb-7"
+                    >
+                      USEFUL TOOLS FOR YOUR STORE
+                    </h3>
+                    <div>
+                      <ul>
+                        <li class="my-5">
+                          <a href=""
+                            ><p
+                              class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >
+                              Warning-proof legal texts
+                            </p>
+                            <p
+                              class="text-sm font-medium text-darkBlue text-nowrap hover:text-brightBlue"
+                            >
+                              For general terms and conditions, privacy policy
+                              & Co
+                            </p></a
+                          >
+                        </li>
+                        <li class="my-5">
+                          <a href=""
+                            ><p
+                              class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >
+                              Industry entries
+                            </p>
+                            <p
+                              class="text-sm font-medium text-darkBlue text-nowrap hover:text-brightBlue"
+                            >
+                              For Google, Facebook & Co.
+                            </p></a
+                          >
+                        </li>
+  
+                        <li class="mt-5">
+                          <a href=""
+                            ><p
+                              class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >
+                              Social media integration
+                            </p>
+                            <p
+                              class="text-sm font-medium text-darkBlue text-nowrap hover:text-brightBlue"
+                            >
+                              Sell on Facebook & Instagram
+                            </p></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="px-1.5 headerToggle h-[68px] min-[768px]:h-[90px] hover:border-b-4 hover:border-brightBlue"
+            >
+              <button class="flex items-center h-[68px] min-[768px]:h-[90px]">
+                <p class="pr-1 font-medium text-darkBlue">Business-Tools</p>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M15.712 9.707l-5.004 5.004a.994.994 0 01-.706.292.995.995 0 01-.707-.292L4.293 9.707a.999.999 0 111.414-1.414l4.295 4.298 4.296-4.298a.999.999 0 111.414 1.414z"
+                    fill="#001453"
+                  ></path>
+                </svg>
+              </button>
+              <div class="">
+                <div
+                  class="bg-white flex shadow-custom-shadow ml-[-40px] absolute headerHiddenDiv"
+                >
+                  <div class="px-10 pt-10 pb-16">
+                    <h3
+                      class="text-xs font-semibold opacity-[70%] text-nowrap mb-7"
+                    >
+                      A LOGO FOR YOUR BUSINESS
+                    </h3>
+                    <div>
+                      <ul>
+                        <li class="my-5">
+                          <a href=""
+                            ><p
+                              class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >
+                              Logo Generator
+                            </p>
+                            <p
+                              class="text-sm font-medium text-darkBlue text-nowrap hover:text-brightBlue"
+                            >
+                              Create your own free logo
+                            </p></a
+                          >
+                        </li>
+                        <li class="my-5">
+                          <a href=""
+                            ><p
+                              class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >
+                              Logo Examples
+                            </p>
+                            <p
+                              class="text-sm font-medium text-darkBlue text-nowrap hover:text-brightBlue"
+                            >
+                              Get inspired
+                            </p></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="px-10 pt-10 pb-16">
+                    <h3
+                      class="text-xs font-semibold opacity-[70%] text-nowrap mb-7"
+                    >
+                      MORE USEFUL TOOLS
+                    </h3>
+                    <div>
+                      <ul>
+                        <li class="my-5">
+                          <a href=""
+                            ><p
+                              class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >
+                              Industry entries
+                            </p>
+                            <p
+                              class="text-sm font-medium text-darkBlue text-nowrap hover:text-brightBlue"
+                            >
+                              For Google, Facebook & Co.
+                            </p></a
+                          >
+                        </li>
+                        <li class="my-5">
+                          <a href=""
+                            ><p
+                              class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                            >
+                              Warning-proof legal texts
+                            </p>
+                            <p
+                              class="text-sm font-medium text-darkBlue text-nowrap hover:text-brightBlue"
+                            >
+                              For privacy policy & Co
+                            </p></a
+                          >
+                        </li>
+  
+                        <li class="mt-5">
+                          <a href=""
+                            ><p
+                              class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                              >
+                                Social media integration
+                              </p>
+                              <p
+                                class="text-sm font-medium text-darkBlue text-nowrap hover:text-brightBlue"
+                              >
+                                Sell on Facebook & Instagram
+                              </p></a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             
+
+  
+            <!--second nav group-->
+            <div
+              class="min-[992px]:flex min-[992px]:gap-12 min-[992px]:justify-end min-[992px]:col-span-4 min-[992px]:col-end-[-1] navbar2"
+            >
+              <div
+                class="px-1.5 headerToggle borderDiv h-[68px] min-[768px]:h-[90px] hover:border-b-4 hover:border-brightBlue"
+              >
+                <button class="flex items-center h-[68px] min-[768px]:h-[90px]">
+                  <p class="pr-1 font-medium text-darkBlue">Knowledge Guide</p>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15.712 9.707l-5.004 5.004a.994.994 0 01-.706.292.995.995 0 01-.707-.292L4.293 9.707a.999.999 0 111.414-1.414l4.295 4.298 4.296-4.298a.999.999 0 111.414 1.414z"
+                      fill="#001453"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="">
+                  <div
+                    class="bg-white flex shadow-custom-shadow ml-[-40px] absolute headerHiddenDiv"
+                  >
+                    <div class="px-10 pt-10 pb-16">
+                      <h3
+                        class="text-xs font-semibold opacity-[70%] text-nowrap mb-7"
+                      >
+                        EXPERTISE, TIPS AND INSPIRATION
+                      </h3>
+                      <div>
+                        <ul>
+                          <li class="my-5">
+                            <a href=""
+                              ><p
+                                class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                              >
+                                All Topics
+                              </p>
+                              <p
+                                class="text-sm font-medium text-darkBlue text-nowrap hover:text-brightBlue"
+                              >
+                                Knowledge guide overview
+                              </p></a
+                            >
+                          </li>
+                          <li class="my-5">
+                            <a href=""
+                              ><p
+                                class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                              >
+                                Website Tips
+                              </p>
+                              <p
+                                class="text-sm font-medium text-darkBlue text-nowrap hover:text-brightBlue"
+                              >
+                                Get the most out of your website
+                              </p></a
+                            >
+                          </li>
+  
+                          <li class="mt-5">
+                            <a href=""
+                              ><p
+                                class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                              >
+                                Business Knowledge
+                              </p>
+                              <p
+                                class="text-sm font-medium text-darkBlue text-nowrap hover:text-brightBlue"
+                              >
+                                Everything about your self-employment
+                              </p></a
+                            >
+                          </li>
+                          <li class="mt-5">
+                            <a href=""
+                              ><p
+                                class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                              >
+                                Success stories
+                              </p>
+                              <p
+                                class="text-sm font-medium text-darkBlue text-nowrap hover:text-brightBlue"
+                              >
+                                Inspiring stories by real Jimdo customers
+                              </p></a
+                            >
+                          </li>
+                          <li class="mt-5">
+                            <a href=""
+                              ><p
+                                class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                              >
+                                Jimdo Updates
+                              </p>
+                              <p
+                                class="text-sm font-medium text-darkBlue text-nowrap hover:text-brightBlue"
+                              >
+                                What's new at Jimdo?
+                              </p></a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="px-1.5 headerToggle borderDiv h-[68px] min-[768px]:h-[90px] hover:border-b-4 hover:border-brightBlue"
+              >
+                <button class="flex items-center h-[68px] min-[768px]:h-[90px]">
+                  <p class="pr-1 font-medium text-darkBlue">Help</p>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15.712 9.707l-5.004 5.004a.994.994 0 01-.706.292.995.995 0 01-.707-.292L4.293 9.707a.999.999 0 111.414-1.414l4.295 4.298 4.296-4.298a.999.999 0 111.414 1.414z"
+                      fill="#001453"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="">
+                  <div
+                    class="bg-white flex shadow-custom-shadow ml-[-40px] absolute headerHiddenDiv"
+                    >
+                      <div class="px-10 pt-10 pb-16">
+                        <h3
+                          class="text-xs font-semibold opacity-[70%] text-nowrap mb-7"
+                        >
+                          OUR WEBSITE BUILDER
+                        </h3>
+                        <div>
+                          <ul>
+                            <li class="mt-5">
+                              <a href=""
+                                ><p
+                                  class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                                >
+                                  Help Center
+                                </p>
+                                <p
+                                  class="text-sm font-medium text-darkBlue text-nowrap hover:text-brightBlue"
+                                >
+                                  Find answers to your questions
+                                </p></a
+                              >
+                            </li>
+                            <li class="mt-5">
+                              <a href=""
+                                ><p
+                                  class="font-semibold text-darkBlue text-nowrap hover:text-brightBlue"
+                                >
+                                  Contact support
+                                </p>
+                                <p
+                                  class="text-sm font-medium text-darkBlue text-nowrap hover:text-brightBlue"
+                                >
+                                  Our support team is here for you
+                                </p></a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="self-center logInButtons">
+                  <a href="" class="py-1 w-full min-[992px]:hidden mb-1"
+                    ><div
+                      class="border-2 border-solid rounded border-darkBlue bg-darkBlue"
+                    >
+                      <p class="self-center font-medium text-white">Sign Up</p>
+                    </div></a
+                  >
+                  <a href="" class="max-[991px]:py-1 max-[991px]:w-full"
+                    ><div
+                      class="max-[991px]:border-2 max-[991px]:border-solid max-[991px]:border-darkBlue max-[991px]:rounded"
+                    >
+                      <p class="self-center font-medium">Log In</p>
+                    </div></a
+                  >
+                </div>
+              </div>
+            </div>
+            <script src="nav.js"></script>
+          </header>
+        </div>
+      </nav>
+
+      
+  
+</body>
+</html>
