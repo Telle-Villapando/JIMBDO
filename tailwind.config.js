@@ -16,12 +16,14 @@ module.exports = {
       screens: {
         mb: "320px",
         md: "768px",
-        DK: "2560px",
+        dk: "1370px",
+        LL: "1440PX",
       },
       maxWidth: {
         1600: "1600px",
         380: "380px",
         106: "106px",
+        340: "340px",
       },
       minWidth: {
         250: "250px",

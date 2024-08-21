@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="input.css" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
  
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+    
     <link
       href="https://fonts.cdnfonts.com/css/euclid-circular-a"
       rel="stylesheet"
@@ -74,12 +72,12 @@ header {
       <div class="pt-10 pb-16 lg:pt-16 lg:pb-32 md:pt-16 md:pb-32 ">
         <!-- -- grid container --- -->
         <div
-          class="grid grid-cols-6 gap-5 px-5 py-10 md:px-10 md:gap-10 lg:grid-cols-12 "
+          class="relative grid grid-cols-6 gap-5 px-5 py-10 m-auto md:px-10 md:gap-10 lg:grid-cols-12 max-w-[1520px]"
         >
           <!-- --- DIV DESCRIPTION Container --- -->
-          <div class="col-span-6 row-start-1 md:col-span-4 md:col-start-2 lg:col-start-1 lg:col-span-5 md:max-w-[445px]">
+          <div class="col-span-6 row-start-1 md:col-span-4 md:col-start-2 lg:col-start-1 lg:col-span-6 ">
             
-            <h1 class="pb-5 text-3xl font-normal leading-tight md:text-5xl ">
+            <h1 class="pb-5 text-3xl font-normal leading-tight text-left md:text-5xl lg:pb-7 md:leading-tight md:max-w-[445px] LL:max-w-[543px]">
               Create an Online Portfolio With Jimbdo
             </h1>
             <!-- --- LIST YUNG MAY CHECK -- -->
@@ -138,13 +136,15 @@ header {
             </div>
             <!-- ---  DIV OF BUTTON --- -->
           
-            <div class="flex flex-col self-center justify-center w-full min-w-250 max-w-380">
-              <button class="items-center justify-center p-3 overflow-hidden font-medium text-center transition-colors duration-200 ease-out bg-blue-700 rounded whitespace-nowrap text-ellipsis border-box min-w-[250px] max-w-[380px]">
-                <span class="text-sm font-medium text-white md:text-base"> Start Now </span>
+            <div class="flex flex-col self-center justify-center w-full max-w-[340px] min-w-[250px]">
+              <button class="flex items-center justify-center p-3 overflow-hidden font-medium text-center transition-colors duration-200 ease-out bg-blue-700 rounded whitespace-nowrap text-ellipsis max-w-[340px] min-w-[250px] md:px-5 md:py-4">
+                <span class="text-sm font-medium text-white md:text-base">Start Now</span>
               </button>
-              <p class="mt-3 text-sm text-center text-gray-500  min-w-[250px] max-w-[380px]">Start for free and upgrade anytime to one of our premium plans</p>
+              <p class="mt-3 text-sm text-center text-gray-500 min-w-[250px] max-w-[380px]">
+                Start for free and upgrade anytime to one of our premium plans
+              </p>
             </div>
-        
+            
 
           </div>
 
@@ -161,7 +161,7 @@ header {
 
       <!-- GRID CONTAINER -->
       <div
-        class="grid grid-cols-6 gap-5 px-5 pt-10 pb-5 md:px-10 md:gap-10 lg:grid-cols-12 lg:gap-10 md:pt-20 md:pb-10"
+        class="grid grid-cols-6 gap-5 px-5 pt-10 pb-5 md:px-10 md:gap-10 lg:grid-cols-12 lg:gap-10 md:pt-20 md:pb-10 max-w-[1520px]"
       >
         <div class="justify-center col-span-6 col-start-1 lg:col-start-1 lg:col-span-12 ">
           <h1
@@ -180,7 +180,7 @@ header {
             class="grid items-center justify-center grid-cols-6 gap-5 px-5 py-10 m-auto border-box md:px-10 md:gap-10 lg:grid-cols-12 lg:gap-10 md:py-16"
           >
             <!-- TEXT-CONTAINER -->
-            <div class="justify-center col-span-6 row-start-2 lg:row-start-1 lg:col-start-1">
+            <div class="justify-center col-span-6 row-start-2 lg:row-start-1 lg:col-start-1 xl:col-start-2 xl:col-span-5 max-w-[514px]">
               <h2 class="mb-5 text-lg font-normal md:text-xl lg:text-3xl">Beautiful visuals, by design</h2>
               <p class="mb-5 text-sm md:text-base">
                 Polished. Professional. Eye-catching. With Jimdo's design tools,
@@ -190,7 +190,7 @@ header {
               </p>
             </div>
             <!-- IMAGE CONTAINER -->
-            <div class="flex justify-center w-full col-span-6 row-start-1 object-fit">
+            <div class="flex justify-center w-full col-span-6 row-start-1 object-fit dk:col-start-7">
               <img src="feature-1.png" class="object-fit" alt="sapatos ni santa claus HAHAAH" />
             </div>
           </div>
@@ -203,7 +203,7 @@ header {
           class="grid items-center justify-center grid-cols-6 gap-5 px-5 py-10 m-auto border-box md:px-10 md:gap-10 lg:grid-cols-12 lg:gap-10 md:py-16"
         >
         <!-- TEXT-CONTAINER -->
-        <div class="justify-center col-span-6 row-start-2 lg:row-start-1 lg:col-start-7">
+        <div class="justify-center col-span-6 row-start-2 lg:row-start-1 lg:col-start-7 xl:col-span-5 max-w-[514px]">
           <h2 class="mb-5 text-lg font-normal md:text-xl lg:text-3xl">Help search engines find you</h2>
           <p class="mb-5 text-sm md:text-base">
             Want your portfolio website to find the right audience? Our
@@ -227,7 +227,7 @@ header {
           class="grid items-center justify-center grid-cols-6 gap-5 px-5 py-10 m-auto border-box md:px-10 md:gap-10 lg:grid-cols-12 lg:gap-10 md:py-16"
         >
           <!-- TEXT-CONTAINER -->
-          <div class="col-span-6 row-start-2 ustify-center lg:row-start-1 lg:col-start-1">
+          <div class="col-span-6 row-start-2 ustify-center lg:row-start-1 lg:col-start-1  xl:col-start-2 xl:col-span-5 max-w-[514px]">
             <h2 class="mb-5 text-lg font-normal md:text-xl lg:text-3xl">
               Connect to social media in seconds
             </h2>
@@ -256,51 +256,50 @@ header {
               color: blue; /* Customize the color as needed */
             }
           </style>
-          <!-- TEXT CONTAINER -->
-          <div class="justify-center max-w-md col-span-6 col-start-1 row-start-1 lg:row-start-1 md:col-start-2 lg:col-span-5 ">
+       <!-- TEXT CONTAINER -->
+<div class="flex flex-col items-center self-center justify-center col-span-6 col-start-1 row-start-1 lg:row-start-1 md:col-start-2 lg:col-span-5 xl:col-start-2">
+  <h1 class="mb-10 text-3xl font-normal leading-tight text-center flex-nowrap md:text-5xl">How to make an online portfolio</h1>
+  <p class="mb-10 text-base leading-tight text-center">
+    If you're a photographer, artist, designer, model, or creative, putting your work online is the best way to reach a larger audience. And you can do it in 4 easy steps.
+  </p>
 
-            <h1 class="col-span-6 col-start-1 mb-10 text-3xl font-normal leading-tight text-center flex-nowrap md:text-5xl">How to make an online portfolio</h1>
-            <p class="mb-10 text-base leading-tight text-center">If you're a photographer, artist, designer, model, or creative, putting your work online is the best way to reach a larger audience. And you can do it in 4 easy steps.</p>
-          
-          <div class="mb-10 border-t-2 border-b-2 border-gray-300 ">
-            <ol class="my-10 text-left list-decimal blue-markers">
-              <li class="mb-5 ml-7 ">
-                <span class="text-sm md:text-base">
-                  Sign up or log in with social media. You’ll also be able to choose a domain (website address) for your portfolio site.
-                </span>
-                
-              </li>
-              <li class="mb-5 ml-7 ">
-                <span class="text-sm md:text-base">
-                  Tell us a little about your work. Answer a few questions and our portfolio maker creates the website for you.
-                </span>
-              </li>
-              <li class="mb-5 ml-7">
-                <span class="text-sm md:text-base">
-                  Add your images. Connect your social media accounts to pull in your images from around the web, or easily upload them.
-                </span>
-              </li>
-              <li class="mb-5 ml-7">
-                <span class="text-sm md:text-base">
-                  Publish your site—and you’re online! Then follow our quick and easy tips to optimize your portfolio site even more!
-                </span>
-              </li>
-            </ol>
-          </div>
-        <!-- ---  DIV OF BUTTON --- -->
-        
-        <div class="flex flex-col self-center justify-center w-full min-w-250 max-w-380">
-          <button class="items-center justify-center p-3 overflow-hidden font-medium text-center transition-colors duration-200 ease-out bg-blue-700 rounded whitespace-nowrap text-ellipsis border-box min-w-[250px] max-w-[380px]">
-            <span class="text-sm font-medium text-white md:text-base"> Start Now </span>
-          </button>
-          
-        </div>
-      
-        </div>
+  <div class="mb-10 border-t-2 border-b-2 border-gray-300">
+    <ol class="my-10 text-left list-decimal blue-markers">
+      <li class="mb-5 ml-7">
+        <span class="text-sm md:text-base">
+          Sign up or log in with social media. You’ll also be able to choose a domain (website address) for your portfolio site.
+        </span>
+      </li>
+      <li class="mb-5 ml-7">
+        <span class="text-sm md:text-base">
+          Tell us a little about your work. Answer a few questions and our portfolio maker creates the website for you.
+        </span>
+      </li>
+      <li class="mb-5 ml-7">
+        <span class="text-sm md:text-base">
+          Add your images. Connect your social media accounts to pull in your images from around the web, or easily upload them.
+        </span>
+      </li>
+      <li class="mb-5 ml-7">
+        <span class="text-sm md:text-base">
+          Publish your site—and you’re online! Then follow our quick and easy tips to optimize your portfolio site even more!
+        </span>
+      </li>
+    </ol>
+  </div>
+
+  <!-- DIV OF BUTTON -->
+  <div class="flex items-center justify-center w-full xl:max-w-[206px] min-w-[250px]">
+    <button class="flex items-center justify-center p-3 overflow-hidden font-medium text-center transition-colors duration-200 ease-out bg-blue-700 rounded whitespace-nowrap text-ellipsis max-w-[380px] min-w-[250px] md:px-5 md:py-4">
+      <span class="text-sm font-medium text-white md:text-base">Start Now</span>
+    </button>
+  </div>
+</div>
+
         <!-- END OF TEXT CONTAINER -->
         <!-- HIDDEN IMAGE CONTAINER -->
         
-        <div class="flex col-span-5 lg:col-start-8 lg:row-start-1">
+        <div class="flex col-span-5 xl:col-start-8 lg:row-start-1 xl:col-span-4">
           <div class="hidden w-full lg:flex">
             <img src="steplist-portfolio.png" class="object-contain" alt="AHHH">
           </div>
@@ -676,41 +675,38 @@ header {
         <!-- SECTION CONTAINER -->
          <div class="py-16">
          <!-- GRID CONTAINER -->
-          <div class="box-border grid justify-center grid-cols-6 gap-5 px-5 margin-auto max-w-1600 lg:grid-cols-12 lg:gap-10 lg:px-10">
+          <div class="box-border grid justify-center grid-cols-6 gap-5 px-5 margin-auto max-w-1600 md:px-10 md:gap-10 lg:grid-cols-12 lg:gap-10 lg:px-10">
             <!-- TITLE CONTAINER -->
              <div class="col-span-6 row-start-1 mb-10 text-center lg:col-span-12">
-              <h1 class="mb-5 text-4xl leading-tight">Show off your hard work</h1>
-              <p>A portfolio creator for every profession</p>
+              <h1 class="mb-5 text-4xl leading-tight md:text-5xl">Show off your hard work</h1>
+              <p class="md:text-xl">A portfolio creator for every profession</p>
              </div>
           <!-- TEXT CONTAINER -->
-           <div class="flex self-center col-span-6 row-start-auto text-center lg:row-start-2 lg:col-start-1 lg:col-span-4 ">
+           <div class="flex self-center col-span-6 row-start-auto text-center lg:row-start-2 md:col-start-1 md:col-span-4 ">
             <div class="flex-col">
               <h3 class="mb-5 text-lg font-medium leading-5 text-center md:text-xl">
                 Freelancer
               </h3>
-              <p class="mb-5 text-sm text-center md:text-left md:text-base">Every freelancer needs a website to attract new customers, find work, and show off your skills. Build your own portfolio, with no coding required!</p>
+              <p class="mb-5 text-sm text-center md:text-base">Every freelancer needs a website to attract new customers, find work, and show off your skills. Build your own portfolio, with no coding required!</p>
 
-              <div class="flex items-center justify-between m-auto overflow-hidden  border-b-2 border-black md:max-w-[106px] ">
+              <div class="flex items-center justify-between m-auto overflow-hidden  border-b-2 border-black md:max-w-[238px] ">
                 <span class="flex text-lg text-left ">Freelance website how-to</span>
                 <span >
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="index-module--arrowRight--ca287"><path d="M6.352 11.194l3.8-3.291H0V6.09h10.151l-3.805-3.29 1.417-1.245L14 7.003l-6.231 5.441-1.417-1.25z" fill="currentColor"></path></svg>
                 </span>
               </div>
-              
-
-              
-
             </div>
            </div>
+
              <!-- TEXT CONTAINER -->
-             <div class="flex self-center col-span-6 row-start-auto text-center lg:row-start-2 lg:col-start-5 lg:col-span-4">
+             <div class="flex self-center col-span-6 row-start-auto text-center lg:row-start-2 lg:col-start-5 md:col-start-1 md:col-span-4 ">
               <div class="flex-col">
                 <h3 class="mb-5 text-lg font-medium leading-5 text-center md:text-xl">
                   Photography
                 </h3>
-                <p class="mb-5 text-sm text-center md:text-left md:text-base">Photographers love Jimdo for its beautiful and easy portfolio websites. See how you can get your photos online quickly and start taking bookings.</p>
-                <div class="flex items-center justify-between text-lg border-b-2 border-black">
-                  <span>Photography website how-to</span>
+                <p class="mb-5 text-sm text-center md:text-base">Photographers love Jimdo for its beautiful and easy portfolio websites. See how you can get your photos online quickly and start taking bookings.</p>
+                <div class="flex items-center justify-between m-auto overflow-hidden  border-b-2 border-black md:max-w-[264px] ">
+                  <span class="flex text-lg text-left">Photography website how-to</span>
                   <span>
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="index-module--arrowRight--ca287"><path d="M6.352 11.194l3.8-3.291H0V6.09h10.151l-3.805-3.29 1.417-1.245L14 7.003l-6.231 5.441-1.417-1.25z" fill="currentColor"></path></svg>
                   </span>
@@ -718,14 +714,14 @@ header {
               </div>      
         </div>
          <!-- TEXT CONTAINER -->
-         <div class="flex self-center col-span-6 row-start-auto text-center lg:row-start-2 lg:col-start-9 lg:col-span-4">
+         <div class="flex self-center col-span-6 row-start-auto text-center lg:row-start-2 lg:col-start-9 md:col-start-1 md:col-span-4 lg:col-span-4">
           <div class="flex-col">
             <h3 class="mb-5 text-lg font-medium leading-5 text-center md:text-xl">
               Design
             </h3>
-            <p class="mb-5 text-sm text-center md:text-left md:text-base">Create an art portfolio that matches your style. Our built-in tools will help you improve your search engine ranking and even sell your artwork online.</p>
-            <div class="flex items-center justify-between text-lg border-b-2 border-black">
-              <span>How to design a website</span>
+            <p class="mb-5 text-sm text-center md:text-base">Create an art portfolio that matches your style. Our built-in tools will help you improve your search engine ranking and even sell your artwork online.</p>
+            <div class="flex items-center justify-between m-auto overflow-hidden  border-b-2 border-black md:max-w-[238px] ">
+              <span class="flex text-lg text-left">How to design a website</span>
               <span>
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="index-module--arrowRight--ca287"><path d="M6.352 11.194l3.8-3.291H0V6.09h10.151l-3.805-3.29 1.417-1.245L14 7.003l-6.231 5.441-1.417-1.25z" fill="currentColor"></path></svg>
               </span>
@@ -771,21 +767,21 @@ header {
              <!-- SECTION CONTAINER -->
               <div>
                 <!-- GRID CONTAINER -->
-                 <div class="box-border grid justify-center grid-cols-6 gap-5 px-5 margin-auto max-w-1600">
+                 <div class="box-border grid justify-center grid-cols-6 gap-5 px-5 margin-auto max-w-1600 md:gap-10 md:py-10 md:px-10 ">
                  
     <!-- Dropdown Container -->
-    <div class="w-full col-span-6 row-start-1 py-5" >
+    <div class="w-full col-span-6 row-start-1 py-5 lg:row-start-1 lg:col-start-7 lg:inline-flex" >
       <!-- PRODUCTS Dropdown -->
       <div>
-        <button id="dropdown-products-toggle" class="relative flex items-center justify-between w-full p-2 bg-transparent" onclick="toggleDropdown('dropdown-products')">
+        <button id="dropdown-products-toggle" class="relative flex items-center justify-between w-full p-2 mb-4 font-medium bg-transparent " onclick="toggleDropdown('dropdown-products')">
           <h3>Products</h3>
           <span class="ml-2">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-transform duration-300 transform" id="dropdown-products-arrow">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-transform duration-300 transform lg:hidden" id="dropdown-products-arrow">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M15.712 9.707l-5.004 5.004a.994.994 0 01-.706.292.995.995 0 01-.707-.292L4.293 9.707a.999.999 0 111.414-1.414l4.295 4.298 4.296-4.298a.999.999 0 111.414 1.414z" fill="currentColor"></path>
             </svg>
           </span>
         </button>
-        <div id="dropdown-products" class="hidden p-2 mt-2 bg-transparent border-2 border-blue-800 border-solid ">
+        <div id="dropdown-products" class="hidden p-2 mt-2 bg-transparent border-2 border-blue-800 border-solid lg:block lg:border-none">
           <ul class="flex flex-col space-y-2">
             <li><span>Website</span></li>
             <li><span>Online Store</span></li>
@@ -796,15 +792,15 @@ header {
       </div>
       <!-- ABOUT US Dropdown -->
       <div>
-        <button id="dropdown-aboutus-toggle" class="relative flex items-center justify-between w-full p-2 bg-transparent" onclick="toggleDropdown('dropdown-aboutus')">
+        <button id="dropdown-aboutus-toggle" class="relative flex items-center justify-between w-full p-2 mb-4 font-medium bg-transparent" onclick="toggleDropdown('dropdown-aboutus')">
           <h3>About Us</h3>
           <span class="ml-2">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-transform duration-300 transform" id="dropdown-aboutus-arrow">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-transform duration-300 transform lg:hidden" id="dropdown-aboutus-arrow">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M15.712 9.707l-5.004 5.004a.994.994 0 01-.706.292.995.995 0 01-.707-.292L4.293 9.707a.999.999 0 111.414-1.414l4.295 4.298 4.296-4.298a.999.999 0 111.414 1.414z" fill="currentColor"></path>
             </svg>
           </span>
         </button>
-        <div id="dropdown-aboutus" class="hidden p-2 mt-2 bg-transparent border-2 border-blue-800 border-solid ">
+        <div id="dropdown-aboutus" class="hidden p-2 mt-2 bg-transparent border-2 border-blue-800 border-solid lg:block lg:border-none ">
           <ul class="flex flex-col space-y-2">
             <li><span>About Jimbdo</span></li>
             <li><span>Careers</span></li>
@@ -815,15 +811,15 @@ header {
   
       <!-- SERVICE Dropdown -->
       <div>
-        <button id="dropdown-service-toggle" class="relative flex items-center justify-between w-full p-2 bg-transparent" onclick="toggleDropdown('dropdown-service')">
+        <button id="dropdown-service-toggle" class="relative flex items-center justify-between w-full p-2 mb-4 font-medium bg-transparent" onclick="toggleDropdown('dropdown-service')">
           <h3>Service</h3>
           <span class="ml-2">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-transform duration-300 transform" id="dropdown-service-arrow">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-transform duration-300 transform lg:hidden" id="dropdown-service-arrow">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M15.712 9.707l-5.004 5.004a.994.994 0 01-.706.292.995.995 0 01-.707-.292L4.293 9.707a.999.999 0 111.414-1.414l4.295 4.298 4.296-4.298a.999.999 0 111.414 1.414z" fill="currentColor"></path>
             </svg>
           </span>
         </button>
-        <div id="dropdown-service" class="hidden p-2 mt-2 bg-transparent border-2 border-blue-800 border-solid ">
+        <div id="dropdown-service" class="hidden p-2 mt-2 bg-transparent border-2 border-blue-800 border-solid lg:block lg:border-none">
           <ul class="flex flex-col space-y-2">
             <li><span>Jimbdo Blog</span></li>
             <li><span>Inspiration</span></li>
@@ -847,7 +843,7 @@ header {
     </script>
 
                   <!-- JIMBDO FOOTER LOGO -->
-                  <div class="justify-center col-span-6 pb-5 m-auto">
+                  <div class="justify-center col-span-6 pb-5 m-auto lg:row-span-1 lg:justify-start lg:col-start-1">
                     <span>
                       <svg class="w-auto h-12 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 37"><path fill="#010334" d="M82.37 9.905a8.58 8.58 0 00-8.579 8.58 8.58 8.58 0 008.58 8.58 8.58 8.58 0 008.58-8.58 8.58 8.58 0 00-8.58-8.58zm0 13.393a4.813 4.813 0 110-9.625 4.813 4.813 0 010 9.625zM35.137 10.23h3.608l5.469 10.267 5.444-10.267h3.633v16.513h-4.057V17.92l-4.618 8.823h-.803l-4.618-8.8v8.8h-4.057V10.23h-.001zm-12.252.057h-4.072v9.86a2.847 2.847 0 01-5.693 0H9.048a6.919 6.919 0 1013.837 0v-9.86zm40.54-.057h-6.1v16.513h6.1a8.256 8.256 0 100-16.513zm-.495 13.068h-1.546v-9.625h1.546a4.812 4.812 0 110 9.625zM31.04 10.287h-4.086v16.4h4.086v-16.4z"></path><path fill="#010334" d="M97.537 2.463V34.51H2.463V2.463h95.074zM100 0H0v36.973h100V0z"></path></svg>
                     </span>
@@ -855,7 +851,7 @@ header {
       
               
                   <!-- LOGO- SOCIALS CONTAINER -->
-                 <div class="col-span-6 gap-5 py-5 m-auto text-center">
+                 <div class="col-span-6 gap-5 py-5 m-auto text-center lg:row-start-1 lg:justify-start">
                    
                     <ul class="flex items-center gap-5">
                       <li>
@@ -1024,25 +1020,25 @@ NEW LANG SELECT -->
 
 
                 <!-- LEGAL FOOTER -->
-                 <div class="justify-center col-span-6 py-5 m-auto text-center ">
-                  <ul>
-                    <li class="px-3 py-2">
-                      <span>
+                 <div class="flex items-center justify-center col-span-6 py-5 m-auto text-center md:justify-start md:pl-10">
+                  <ul class="md:inline-flex">
+                    <li class="px-3 py-2 ">
+                      <span class="font-normal ">
                         Legal notice
                       </span>
                     </li>
                     <li class="px-3 py-2">
-                      <span>
+                      <span class="font-normal ">
                         Terms of Service
                       </span>
                     </li>
                     <li class="px-3 py-2"> 
-                      <span>
+                      <span class="font-normal ">
                         Privacy Policy
                       </span>
                     </li>
                     <li class="px-3 py-2">
-                      <span>
+                      <span class="font-normal ">
                         Cookie Settings
                       </span>
                     </li>
