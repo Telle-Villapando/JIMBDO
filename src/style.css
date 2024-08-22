@@ -26,3 +26,12 @@
 .headerToggle svg {
   transition: 0.2s ease;
 }
+
+.hamburger {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  transition: 0.5s ease-in-out;
+  width: 25px;
+  z-index: 1;
+}
